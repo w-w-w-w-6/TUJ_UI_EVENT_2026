@@ -103,13 +103,14 @@ body.page-blank {
 {
   display: flex;
   flex-direction: row;
+  flex-flow: space-around;
+  border-right: var(--neutral) 20px double;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
   background: var(--primary-color);
   transform: skewX(14deg);
   position: relative;
   left: -1.7vw;
 }
-
 
 
 .logo {
@@ -132,14 +133,13 @@ body.page-blank {
 .nav
 {
   padding-left: 2vw;
-  /*font-family: "Oswald", sans-serif;*/
 }
 
 /* Nav li */
 .nav li 
 {
   display: inline-block;
-  margin-right: 3.6vw;
+  margin-right: 2vw;
 }
 
 
@@ -171,6 +171,7 @@ h3 {
   background-color: var(--secondary-color);
   transform: skewX(14deg);
   position: relative;
+  border-left: var(--neutral) 20px double;
 }
 
 
@@ -180,20 +181,21 @@ h1
 }
 
 
-/* <p> element
 p {
   font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
-  border-right: 2px dashed #3a86ff;
-  padding-right: 1.9vw;
+  border-left: 2px dashed var(--primary-color);
+  transform: skewX(14deg);
+  padding-left: 1.9vw;
   color: #2b2d42;
   margin-left: 4.4vw;
   text-align: justify;
   text-indent: 2.7vw;
   word-spacing: 0.28em;
+  max-width: 80vw;
 }
-*/
+
 
 /* intro class
 .intro {
@@ -243,14 +245,14 @@ p {
 }
 */
 
-/*
+
 .page-image {
   position: relative;
   z-index: 1;
   margin: 4vh auto 3vh auto;
   text-align: center;
 }
-*/
+
 
 /*
 .page-image img {
@@ -267,7 +269,6 @@ p {
 /* Keep this*/
 .page-image--home img {
   max-width: 60vw;
-  transform: rotate(4deg);
 }
 
 .page-image--services {
