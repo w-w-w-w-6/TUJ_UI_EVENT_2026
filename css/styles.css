@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(
+    circle at 7% 13%,
+    #ffb3c6 0,
+    #f1f7ff 27%,
+    #c7ffd8 63%,
+    #f9f871 99%
+  );
+  color: #2b0034;
+  margin: 3vh 4vw 11vh 6vw;
+  text-align: left;
+}
+
+body.page-home {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 35%, #fbc2eb 100%);
+}
+
+body.page-about {
+  background: radial-gradient(
+    circle at 20% 20%,
+    #a1c4fd 0%,
+    #c2e9fb 45%,
+    #fdfbfb 100%
+  );
+}
+
+body.page-services {
+  background: linear-gradient(160deg, #fddb92 0%, #d1fdff 40%, #c6ffdd 100%);
+}
+
+body.page-clients {
+  background: radial-gradient(
+    circle at 10% 80%,
+    #ffecd2 0%,
+    #fcb69f 40%,
+    #ff9a9e 100%
+  );
+}
+
+body.page-contact {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 50%, #fefefe 100%);
+}
+
+body.page-profile {
+  background: radial-gradient(
+    circle at 80% 10%,
+    #f6d365 0%,
+    #fda085 30%,
+    #fbc2eb 100%
+  );
+}
+
+body.page-blank {
+  background: radial-gradient(
+    circle at 80% 10%,
+    #f6d365 0%,
+    #fda085 30%,
+    #fbc2eb 100%
+  );
+}
+
+#top-bar {
+  border-bottom: 4px dashed #ff4d6d;
+  padding: 1.1vh 2.3vw 2.7vh 0.7vw;
+  background: linear-gradient(90deg, #ff9e00, #ff4d6d, #ffccd5);
+  box-shadow: 0 0 0 4px #00bbf9;
+  position: relative;
+  left: -1.7vw;
+}
+
+.logo {
+  font-family: "Bangers", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: #240046;
+  text-shadow:
+    2px 2px 0 #ffea00,
+    -2px 0 0 #ff6d00;
+  margin-bottom: 0.9vh;
+  position: relative;
+  top: 0.6vh;
+}
+
+.nav {
+  list-style: square;
+  padding-left: 2vw;
+  font-family: "Oswald", sans-serif;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 3.6vw;
+  transform: skewX(-14deg);
+}
+
+.nav a {
+  text-decoration: underline wavy #ff006e;
+  color: #1d3557;
+  background-color: #caffbf;
+  padding: 0.4vh 0.8vw;
+  border-radius: 0 2.7vw 0 1.3vw;
+}
+
+.nav a:hover {
+  background-color: #ffd6a5;
+  color: #6a040f;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Lobster", cursive;
+  border-left: 7px double #ffba08;
+  padding-left: 1.4vw;
+  margin-top: 4.6vh;
+  margin-bottom: 1.7vh;
+  color: #03045e;
+  position: relative;
+}
+
+.title-main {
+  font-size: 4.1vw;
+  text-transform: none;
+  background-color: rgba(255, 0, 122, 0.25);
+  text-align: center;
+  left: 2.2vw;
+}
+
+.section-title {
+  background-color: rgba(0, 255, 200, 0.3);
+  text-align: right;
+  left: -3.3vw;
+}
+
+.section-title.loud {
+  letter-spacing: 0.2em;
+  text-shadow:
+    1px 1px 0 #000000,
+    2px 2px 0 #ff006e;
+  top: -1.9vh;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  max-width: 63vw;
+  line-height: 1.37;
+  border-right: 2px dashed #3a86ff;
+  padding-right: 1.9vw;
+  color: #2b2d42;
+  margin-left: 4.4vw;
+  text-align: justify;
+  text-indent: 2.7vw;
+  word-spacing: 0.28em;
+}
+
+.intro {
+  font-family: "Indie Flower", cursive;
+  font-style: normal;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #1b4332;
+  margin-left: 11vw;
+  margin-top: -1.2vh;
+  text-indent: 3.9vw;
+  word-spacing: 0.12em;
+}
+
+.weird-list {
+  list-style-type: upper-roman;
+  margin-left: 13vw;
+  font-family: "Raleway", sans-serif;
+  color: #780000;
+}
+
+.weird-list li {
+  background-color: #ffe5ec;
+  margin-bottom: 4px;
+  padding: 3px;
+  border-left: 4px solid #ff8fab;
+  text-indent: 1.4vw;
+  letter-spacing: 0.06em;
+}
+
+.stats {
+  list-style-type: decimal-leading-zero;
+  margin-left: 3vw;
+  background-color: #e5ffd8;
+  border: 3px groove #2ec4b6;
+  padding: 1.4vh 1.7vw;
+  font-family: "Fira Sans", sans-serif;
+  color: #003049;
+  position: relative;
+  left: 4.2vw;
+  text-indent: 0.9vw;
+}
+.page-image {
+  position: relative;
+  z-index: 1;
+  margin: 4vh auto 3vh auto;
+  text-align: center;
+}
+
+.page-image img {
+  max-width: 55vw;
+  height: auto;
+  border: 5px double #ff006e;
+  box-shadow: 0 0 0 4px #00bbf9;
+}
+
+.page-image--home {
+}
+
+.page-image--home img {
+  max-width: 60vw;
+  transform: rotate(4deg);
+}
+
+.page-image--services {
+}
+
+.page-image--services img {
+  max-width: 50vw;
+  transform: rotate(-6deg);
+}
+
+.page-image--contact {
+}
+
+.page-image--contact img {
+  max-width: 55vw;
+  transform: rotate(5deg);
+}
+
+.home-form {
+  border: 4px ridge #ff66ff;
+  padding: 8px;
+  margin-top: -1.1vh;
+  margin-left: 15vw;
+  background-color: #e0fbfc;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: -2.6vh;
+}
+
+input,
+textarea {
+  width: 23vw;
+  border: 2px solid #4361ee;
+  background-color: #fffbea;
+  font-family: "Fira Sans", sans-serif;
+  color: #14213d;
+  display: block;
+  margin: 0.7vh 0 2.3vh 1.1vw;
+}
+
+button {
+  background-color: #ff5400;
+  color: #001219;
+  border: 3px outset #1f3c88;
+  padding: 0.9vh 1.9vw;
+  cursor: pointer;
+  font-family: "Pacifico", cursive;
+  margin-left: 7.2vw;
+  transform: rotate(-2deg);
+}
+
+button:hover {
+  background-color: #80ed99;
+  color: #370617;
+}
+
+#footer-text {
+  margin-top: 7vh;
+  font-size: 1.3vw;
+  font-family: "Raleway", sans-serif;
+  color: #4a4e69;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.4vh 1.7vw;
+  border-top: 5px solid #ff006e;
+  text-align: center;
+  position: relative;
+  right: -5.3vw;
+}
