@@ -99,31 +99,34 @@ body.page-blank {
 */
 
 /* Top bar content (not the buttons) */
-#top-bar {
+#top-bar 
+{
+  display: flex;
+  flex-direction: row;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
   background: var(--primary-color);
   border-radius: 5px 5px 10px;
+  transform: skewX(14deg);
   position: relative;
   left: -1.7vw;
 }
 
-/*
-// Hackathon Logo
+
+
 .logo {
-  font-family: "Bangers", cursive;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  color: #240046;
+  color: var(--neutral);
   text-shadow:
-    2px 2px 0 #ffea00,
-    -2px 0 0 #ff6d00;
+    3px 3px 0 var(--accent),
+    6px 6px 0 var(--secondary-color);
   margin-bottom: 0.9vh;
   position: relative;
   top: 0.6vh;
 }
-*/
+
 
 
 /* Navigation */
@@ -138,7 +141,6 @@ body.page-blank {
 {
   display: inline-block;
   margin-right: 3.6vw;
-  transform: skewX(-14deg);
 }
 
 
@@ -160,6 +162,7 @@ body.page-blank {
   transition: color 0.3s, background-color 0.3s;
 }
 
+/**/
 h1,
 h2,
 h3 {
