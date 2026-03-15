@@ -23,7 +23,7 @@ body
 {
   font-family: "Roboto", sans-serif;
   background-color: var(--neutral);
-  color: #2b0034;
+  color: var(--secondary-color);
   margin: 3vh 4vw 11vh 6vw;
   text-align: left;
 }
