@@ -105,7 +105,6 @@ body.page-blank {
   flex-direction: row;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
   background: var(--primary-color);
-  border-radius: 5px 5px 10px;
   transform: skewX(14deg);
   position: relative;
   left: -1.7vw;
@@ -151,7 +150,6 @@ body.page-blank {
   color: var(--secondary-color);
   background-color: var(--neutral);
   padding: 0.4vh 0.8vw;
-  border-radius: 10px;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -162,51 +160,25 @@ body.page-blank {
   transition: color 0.3s, background-color 0.3s;
 }
 
-/**/
+/*Main headers*/
 h1,
 h2,
 h3 {
-  font-family: "Lobster", cursive;
-  border-left: 7px double #ffba08;
   padding-left: 1.4vw;
   margin-top: 4.6vh;
   margin-bottom: 1.7vh;
-  color: #03045e;
+  color: var(--neutral);
+  background-color: var(--secondary-color);
+  transform: skewX(14deg);
   position: relative;
 }
 
 
-
-/*
- Main title
-.title-main {
-  font-size: 4.1vw;
-  text-transform: none;
-  background-color: rgba(255, 0, 122, 0.25);
-  text-align: center;
-  left: 2.2vw;
+h1 
+{
+  background-color: var(--accent);
 }
-*/
 
-
-/*
-Section title
-.section-title {
-  background-color: rgba(0, 255, 200, 0.3);
-  text-align: right;
-  left: -3.3vw;
-}
-*/
-
-/*
-.section-title.loud {
-  letter-spacing: 0.2em;
-  text-shadow:
-    1px 1px 0 #000000,
-    2px 2px 0 #ff006e;
-  top: -1.9vh;
-}
-*/
 
 /* <p> element
 p {
