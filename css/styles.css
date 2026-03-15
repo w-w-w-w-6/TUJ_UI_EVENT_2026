@@ -112,7 +112,8 @@ h1
 }
 
 
-p {
+p 
+{
   font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
@@ -125,24 +126,30 @@ p {
   max-width: 80vw;
 }
 
+/*Half grid*/
+.half-grid
+{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 
 
-.page-image {
+.page-image 
+{
   position: relative;
   z-index: 1;
-  margin: 4vh auto 3vh auto;
+  margin: 1vh auto 1vh auto;
   text-align: center;
 }
 
 
-/*
-.page-image img {
-  max-width: 55vw;
+
+.page-image img 
+{
+  max-height: 400px;
   height: auto;
-  border: 5px double #ff006e;
-  box-shadow: 0 0 0 4px #00bbf9;
 }
-*/
+
 
 .page-image--home {
 }
