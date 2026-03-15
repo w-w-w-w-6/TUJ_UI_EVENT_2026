@@ -8,57 +8,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap");
 
-/*
-  Font
+/* 
+  Variables (for color scheme) 
 */
-
-.barlow-condensed-regular {
-  font-family: "Barlow Condensed", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+:root 
+{
+  --primary-color: #FF8360;
+  --secondary-color: #7A5C61;
+  --neutral: #FBF5F3;
+  --accent: #8EAAAB;
 }
 
 body 
 {
   font-family: "Roboto", sans-serif;
-  background: radial-gradient(
-    circle at 7% 13%,
-    #ffb3c6 0,
-    #f1f7ff 27%,
-    #c7ffd8 63%,
-    #f9f871 99%
-  );
+  background-color: var(--neutral);
   color: #2b0034;
   margin: 3vh 4vw 11vh 6vw;
   text-align: left;
 }
 
-/* 
-  Variables (for color scheme) 
-*/
-@property --primary-color 
-{
-  syntax: "<color>";
-  initial-value: #FF8360;
-}
-
-@property --secondary-color
-{
-  syntax: "<color>";
-  initial-value: white;
-}
-
-@property --neutral
-{
-  syntax: "<color>";
-  initial-value: #FBF5F3;
-}
-
-@property --accent
-{
-  syntax: "<color>";
-  initial-value: #8EAAAB;
-}
 
 /*
 // Controls home page <body>
