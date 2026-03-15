@@ -98,17 +98,14 @@ body.page-blank {
 }
 */
 
-/*
-// Top bar content (not the buttons)
+/* Top bar content (not the buttons) */
 #top-bar {
-  border-bottom: 4px dashed #ff4d6d;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
-  background: linear-gradient(90deg, #ff9e00, #ff4d6d, #ffccd5);
-  box-shadow: 0 0 0 4px #00bbf9;
+  background: var(--primary-color);
+  border-radius: 5px 5px 10px;
   position: relative;
   left: -1.7vw;
 }
-*/
 
 /*
 // Hackathon Logo
@@ -128,45 +125,41 @@ body.page-blank {
 }
 */
 
-/*
-// Navigation
-.nav {
-  list-style: square;
-  padding-left: 2vw;
-  font-family: "Oswald", sans-serif;
-}
-*/
 
-/*
-// Hackathon
-.nav li {
+/* Navigation */
+.nav
+{
+  padding-left: 2vw;
+  /*font-family: "Oswald", sans-serif;*/
+}
+
+/* Nav li */
+.nav li 
+{
   display: inline-block;
   margin-right: 3.6vw;
   transform: skewX(-14deg);
 }
-*/
 
-/*
 
-.nav a {
-  text-decoration: underline wavy #ff006e;
-  color: #1d3557;
-  background-color: #caffbf;
+/*Nav a (buttons)*/
+.nav a 
+{
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--neutral);
   padding: 0.4vh 0.8vw;
-  border-radius: 0 2.7vw 0 1.3vw;
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Nav button hover state
-.nav a:hover {
-  background-color: #ffd6a5;
-  color: #6a040f;
+.nav a:hover
+{
+  background-color: var(--accent);
+  color: var(--neutral);
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Headers
 h1,
 h2,
 h3 {
@@ -178,7 +171,8 @@ h3 {
   color: #03045e;
   position: relative;
 }
-*/
+
+
 
 /*
  Main title
