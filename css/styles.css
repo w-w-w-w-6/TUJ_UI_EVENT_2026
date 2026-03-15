@@ -58,8 +58,6 @@ body
   top: 0.6vh;
 }
 
-
-
 /* Navigation */
 .nav
 {
@@ -81,6 +79,7 @@ body
   color: var(--secondary-color);
   background-color: var(--neutral);
   padding: 0.4vh 0.8vw;
+  border-left: var(--primary-color) 10px double;
   transition: color 0.3s, background-color 0.3s;
 }
 
@@ -114,7 +113,6 @@ h1
 
 p 
 {
-  font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
   border-left: 3px dashed var(--primary-color);
@@ -134,7 +132,7 @@ p
 }
 
 
-.page-image 
+.page-image
 {
   position: relative;
   z-index: 1;
@@ -150,92 +148,64 @@ p
   height: auto;
 }
 
-
-.page-image--home {
-}
-
-/* Keep this*/
-.page-image--home img {
-  max-width: 60vw;
+.page-image--contact
+{
+  margin-top: 100px;
 }
 
 .page-image--services {
 }
 
-/* Keep this */
-.page-image--services img {
-  max-width: 50vw;
-  transform: rotate(-6deg);
-}
 
-.page-image--contact {
-}
-
-.page-image--contact img {
-  max-width: 55vw;
-  transform: rotate(5deg);
-}
 
 /* Contact form stuff */
-/*
+
 .home-form {
-  border: 4px ridge #ff66ff;
-  padding: 8px;
-  margin-top: -1.1vh;
-  margin-left: 15vw;
-  background-color: #e0fbfc;
-  font-family: "Open Sans", sans-serif;
-  position: relative;
-  top: -2.6vh;
+  font-weight: bold;
 }
-*/
+
 
 /* Contact form stuff */
 input,
 textarea {
   width: 23vw;
-  border: 2px solid #4361ee;
-  background-color: #fffbea;
-  font-family: "Fira Sans", sans-serif;
-  color: #14213d;
+  border: 2px solid var(--accent);
+  background-color: var(--neutral);
+  color: var(--secondary-color);
   display: block;
   margin: 0.7vh 0 2.3vh 1.1vw;
 }
 
 /* Contact form stuff */
-/*
+
 button {
-  background-color: #ff5400;
-  color: #001219;
-  border: 3px outset #1f3c88;
+  background-color: var(--primary-color);
+  border: 0;
+  transform: skewX(14deg);
+  border-left: 10px double var(--neutral);
+  color: var(--neutral);
   padding: 0.9vh 1.9vw;
   cursor: pointer;
-  font-family: "Pacifico", cursive;
-  margin-left: 7.2vw;
-  transform: rotate(-2deg);
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
-*/
 
-/* Contact form stuff */
-/*
-button:hover {
-  background-color: #80ed99;
-  color: #370617;
+button:hover 
+{
+  background-color: var(--accent);
+  transition: background-color 0.3s;
 }
-*/
 
-/*
-  Footer
-#footer-text {
-  margin-top: 7vh;
-  font-size: 1.3vw;
-  font-family: "Raleway", sans-serif;
-  color: #4a4e69;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 1.4vh 1.7vw;
-  border-top: 5px solid #ff006e;
+#footer-text 
+{
+  border-left: none;
   text-align: center;
-  position: relative;
-  right: -5.3vw;
+  text-decoration: none;
 }
-*/
+
+#footer-text a
+{
+  text-decoration: none;
+  color: var(--secondary-color);
+}
