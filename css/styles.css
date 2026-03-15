@@ -23,7 +23,7 @@ body
 {
   font-family: "Roboto", sans-serif;
   background-color: var(--neutral);
-  color: #2b0034;
+  color: var(--secondary-color);
   margin: 3vh 4vw 11vh 6vw;
   text-align: left;
 }
@@ -98,75 +98,71 @@ body.page-blank {
 }
 */
 
-/*
-// Top bar content (not the buttons)
-#top-bar {
-  border-bottom: 4px dashed #ff4d6d;
+/* Top bar content (not the buttons) */
+#top-bar 
+{
+  display: flex;
+  flex-direction: row;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
-  background: linear-gradient(90deg, #ff9e00, #ff4d6d, #ffccd5);
-  box-shadow: 0 0 0 4px #00bbf9;
+  background: var(--primary-color);
+  border-radius: 5px 5px 10px;
+  transform: skewX(14deg);
   position: relative;
   left: -1.7vw;
 }
-*/
 
-/*
-// Hackathon Logo
+
+
 .logo {
-  font-family: "Bangers", cursive;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  color: #240046;
+  color: var(--neutral);
   text-shadow:
-    2px 2px 0 #ffea00,
-    -2px 0 0 #ff6d00;
+    3px 3px 0 var(--accent),
+    6px 6px 0 var(--secondary-color);
   margin-bottom: 0.9vh;
   position: relative;
   top: 0.6vh;
 }
-*/
 
-/*
-// Navigation
-.nav {
-  list-style: square;
+
+
+/* Navigation */
+.nav
+{
   padding-left: 2vw;
-  font-family: "Oswald", sans-serif;
+  /*font-family: "Oswald", sans-serif;*/
 }
-*/
 
-/*
-// Hackathon
-.nav li {
+/* Nav li */
+.nav li 
+{
   display: inline-block;
   margin-right: 3.6vw;
-  transform: skewX(-14deg);
 }
-*/
 
-/*
 
-.nav a {
-  text-decoration: underline wavy #ff006e;
-  color: #1d3557;
-  background-color: #caffbf;
+/*Nav a (buttons)*/
+.nav a 
+{
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--neutral);
   padding: 0.4vh 0.8vw;
-  border-radius: 0 2.7vw 0 1.3vw;
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Nav button hover state
-.nav a:hover {
-  background-color: #ffd6a5;
-  color: #6a040f;
+.nav a:hover
+{
+  background-color: var(--accent);
+  color: var(--neutral);
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Headers
+/**/
 h1,
 h2,
 h3 {
@@ -178,7 +174,8 @@ h3 {
   color: #03045e;
   position: relative;
 }
-*/
+
+
 
 /*
  Main title
