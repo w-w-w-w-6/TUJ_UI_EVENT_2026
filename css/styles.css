@@ -29,75 +29,6 @@ body
 }
 
 
-/*
-// Controls home page <body>
-body.page-home {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 35%, #fbc2eb 100%);
-}
-*/
-
-/*
-// Controls about page <body>
-body.page-about {
-  background: radial-gradient(
-    circle at 20% 20%,
-    #a1c4fd 0%,
-    #c2e9fb 45%,
-    #fdfbfb 100%
-  );
-}
-*/
-
-/*
-// Controls services page <body>
-body.page-services {
-  background: linear-gradient(160deg, #fddb92 0%, #d1fdff 40%, #c6ffdd 100%);
-}
-*/
-
-/*
-// Controls clients page <body>
-body.page-clients {
-  background: radial-gradient(
-    circle at 10% 80%,
-    #ffecd2 0%,
-    #fcb69f 40%,
-    #ff9a9e 100%
-  );
-}
-*/
-
-/*
-// Controls contact page <body>
-body.page-contact {
-  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 50%, #fefefe 100%);
-}
-*/
-
-/*
-// Controls profile page <body>
-body.page-profile {
-  background: radial-gradient(
-    circle at 80% 10%,
-    #f6d365 0%,
-    #fda085 30%,
-    #fbc2eb 100%
-  );
-}
-*/
-
-/*
-// Controls blank page <body>
-body.page-blank {
-  background: radial-gradient(
-    circle at 80% 10%,
-    #f6d365 0%,
-    #fda085 30%,
-    #fbc2eb 100%
-  );
-}
-*/
-
 /* Top bar content (not the buttons) */
 #top-bar 
 {
@@ -185,10 +116,8 @@ p {
   font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
-  border-left: 2px dashed var(--primary-color);
-  transform: skewX(14deg);
+  border-left: 3px dashed var(--primary-color);
   padding-left: 1.9vw;
-  color: #2b2d42;
   margin-left: 4.4vw;
   text-align: justify;
   text-indent: 2.7vw;
@@ -196,54 +125,6 @@ p {
   max-width: 80vw;
 }
 
-
-/* intro class
-.intro {
-  font-family: "Indie Flower", cursive;
-  font-style: normal;
-  background-color: rgba(255, 255, 255, 0.85);
-  color: #1b4332;
-  margin-left: 11vw;
-  margin-top: -1.2vh;
-  text-indent: 3.9vw;
-  word-spacing: 0.12em;
-}
-*/
-
-/*
-.weird-list {
-  list-style-type: upper-roman;
-  margin-left: 13vw;
-  font-family: "Raleway", sans-serif;
-  color: #780000;
-}
-*/
-
-/*
-.weird-list li {
-  background-color: #ffe5ec;
-  margin-bottom: 4px;
-  padding: 3px;
-  border-left: 4px solid #ff8fab;
-  text-indent: 1.4vw;
-  letter-spacing: 0.06em;
-}
-*/
-
-/*
-.stats {
-  list-style-type: decimal-leading-zero;
-  margin-left: 3vw;
-  background-color: #e5ffd8;
-  border: 3px groove #2ec4b6;
-  padding: 1.4vh 1.7vw;
-  font-family: "Fira Sans", sans-serif;
-  color: #003049;
-  position: relative;
-  left: 4.2vw;
-  text-indent: 0.9vw;
-}
-*/
 
 
 .page-image {
