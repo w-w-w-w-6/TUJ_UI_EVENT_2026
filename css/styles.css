@@ -23,7 +23,7 @@ body
 {
   font-family: "Roboto", sans-serif;
   background-color: var(--neutral);
-  color: #2b0034;
+  color: var(--secondary-color);
   margin: 3vh 4vw 11vh 6vw;
   text-align: left;
 }
@@ -98,133 +98,104 @@ body.page-blank {
 }
 */
 
-/*
-// Top bar content (not the buttons)
-#top-bar {
-  border-bottom: 4px dashed #ff4d6d;
+/* Top bar content (not the buttons) */
+#top-bar 
+{
+  display: flex;
+  flex-direction: row;
+  flex-flow: space-around;
+  border-right: var(--neutral) 20px double;
   padding: 1.1vh 2.3vw 2.7vh 0.7vw;
-  background: linear-gradient(90deg, #ff9e00, #ff4d6d, #ffccd5);
-  box-shadow: 0 0 0 4px #00bbf9;
+  background: var(--primary-color);
+  transform: skewX(14deg);
   position: relative;
   left: -1.7vw;
 }
-*/
 
-/*
-// Hackathon Logo
+
 .logo {
-  font-family: "Bangers", cursive;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 0.22em;
-  color: #240046;
+  color: var(--neutral);
   text-shadow:
-    2px 2px 0 #ffea00,
-    -2px 0 0 #ff6d00;
+    3px 3px 0 var(--accent),
+    6px 6px 0 var(--secondary-color);
   margin-bottom: 0.9vh;
   position: relative;
   top: 0.6vh;
 }
-*/
 
-/*
-// Navigation
-.nav {
-  list-style: square;
+
+
+/* Navigation */
+.nav
+{
   padding-left: 2vw;
-  font-family: "Oswald", sans-serif;
 }
-*/
 
-/*
-// Hackathon
-.nav li {
+/* Nav li */
+.nav li 
+{
   display: inline-block;
-  margin-right: 3.6vw;
-  transform: skewX(-14deg);
+  margin-right: 2vw;
 }
-*/
 
-/*
 
-.nav a {
-  text-decoration: underline wavy #ff006e;
-  color: #1d3557;
-  background-color: #caffbf;
+/*Nav a (buttons)*/
+.nav a 
+{
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--neutral);
   padding: 0.4vh 0.8vw;
-  border-radius: 0 2.7vw 0 1.3vw;
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Nav button hover state
-.nav a:hover {
-  background-color: #ffd6a5;
-  color: #6a040f;
+.nav a:hover
+{
+  background-color: var(--accent);
+  color: var(--neutral);
+  transition: color 0.3s, background-color 0.3s;
 }
-*/
 
-/*
- Headers
+/*Main headers*/
 h1,
 h2,
 h3 {
-  font-family: "Lobster", cursive;
-  border-left: 7px double #ffba08;
   padding-left: 1.4vw;
   margin-top: 4.6vh;
   margin-bottom: 1.7vh;
-  color: #03045e;
+  color: var(--neutral);
+  background-color: var(--secondary-color);
+  transform: skewX(14deg);
   position: relative;
+  border-left: var(--neutral) 20px double;
 }
-*/
 
-/*
- Main title
-.title-main {
-  font-size: 4.1vw;
-  text-transform: none;
-  background-color: rgba(255, 0, 122, 0.25);
-  text-align: center;
-  left: 2.2vw;
+
+h1 
+{
+  background-color: var(--accent);
 }
-*/
 
 
-/*
-Section title
-.section-title {
-  background-color: rgba(0, 255, 200, 0.3);
-  text-align: right;
-  left: -3.3vw;
-}
-*/
-
-/*
-.section-title.loud {
-  letter-spacing: 0.2em;
-  text-shadow:
-    1px 1px 0 #000000,
-    2px 2px 0 #ff006e;
-  top: -1.9vh;
-}
-*/
-
-/* <p> element
 p {
   font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
-  border-right: 2px dashed #3a86ff;
-  padding-right: 1.9vw;
+  border-left: 2px dashed var(--primary-color);
+  transform: skewX(14deg);
+  padding-left: 1.9vw;
   color: #2b2d42;
   margin-left: 4.4vw;
   text-align: justify;
   text-indent: 2.7vw;
   word-spacing: 0.28em;
+  max-width: 80vw;
 }
-*/
+
 
 /* intro class
 .intro {
@@ -274,14 +245,14 @@ p {
 }
 */
 
-/*
+
 .page-image {
   position: relative;
   z-index: 1;
   margin: 4vh auto 3vh auto;
   text-align: center;
 }
-*/
+
 
 /*
 .page-image img {
@@ -298,7 +269,6 @@ p {
 /* Keep this*/
 .page-image--home img {
   max-width: 60vw;
-  transform: rotate(4deg);
 }
 
 .page-image--services {
