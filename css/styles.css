@@ -114,7 +114,6 @@ h1
 
 p 
 {
-  font-family: "Open Sans", sans-serif;
   max-width: 63vw;
   line-height: 1.37;
   border-left: 3px dashed var(--primary-color);
@@ -134,7 +133,7 @@ p
 }
 
 
-.page-image 
+.page-image
 {
   position: relative;
   z-index: 1;
